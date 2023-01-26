@@ -82,7 +82,7 @@ $ git clone <(https://github.com/ismailmunyentwari9/portfolio_final_project/pull
 ## 🔭 Future Features <a name="future-features"></a>
 -Create More pages.  <br>
 -Adding a screen reader.  <br>
--adding direct emails to my email account from users feedbacks.  <br>
+-adding direct emails to my email account.  <br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
