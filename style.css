@@ -719,21 +719,21 @@ h3 {
     align-items: center;
   }
 
-  .text-offwhite {
-    width: 520px;
-  }
-
   .fillPaper input {
     width: 447px;
     height: 48px;
   }
 
-  textarea {
-    width: 447px;
-    height: 170px;
+  .text-offwhite {
+    width: 520px;
   }
 
   .fm-btn {
     margin-left: 151px;
+  }
+
+  textarea {
+    width: 447px;
+    height: 170px;
   }
 }
