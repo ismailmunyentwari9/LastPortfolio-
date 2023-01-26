@@ -694,7 +694,7 @@ h3 {
 
   .img-transition {
     width: 544px;
-    height: 448px;
+    height: 447px;
     transition-duration: 0.5s;
   }
 
@@ -721,15 +721,15 @@ h3 {
 
   .fillPaper input {
     width: 447px;
-    height: 48px;
+    height: 47px;
   }
 
   .text-offwhite {
-    width: 520px;
+    width: 521px;
   }
 
   .fm-btn {
-    margin-left: 151px;
+    margin-left: 150px;
   }
 
   textarea {
