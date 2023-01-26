@@ -380,14 +380,16 @@ h3 {
 }
 
 .btn:hover {
-  color: #fff;
   background: #396df2;
+  color: #fff;
+ 
   transition: 0.5s;
 }
 
 .btn-unknown {
-  margin-top: 24px;
   background-color: white !important;
+  margin-top: 24px;
+
 }
 
 .blur {
