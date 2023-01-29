@@ -1,57 +1,60 @@
-const tank = document.querySelector('#modalContainer');
-const flames = [
+//* ******Popup codes*********
+
+const containerPopup = document.querySelector('#popupModal');
+
+const projects = [
   {
-    id: 'flames_001',
-    address: 'Tonic',
-    picture: 'snapshoot-portfolio.png',
-    news: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    newNews: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    portNews: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
-    share: 'Live Link',
-    shareSrc: 'Source Link',
+    id: 'first_project',
+    name: 'Tonic',
+    image: 'snapshoot-portfolio.png',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    descriptionExtra: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    workInfo: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
+    liveLink: 'Live Link',
+    sourceLink: 'Source Link',
   },
   {
-    id: 'flames_002',
-    address: 'Tonic',
-    picture: 'Snapshoot Portfolio.png',
-    news: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    newNews: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    portNews: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    share: 'Live Link',
-    shareSrc: 'Source Link',
+    id: 'second_project',
+    name: 'Tonic',
+    image: 'Snapshoot Portfolio.png',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    descriptionExtra: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    workInfo: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    liveLink: 'Live Link',
+    sourceLink: 'Source Link',
   },
   {
-    id: 'flames_003',
-    address: 'Tonic',
-    picture: 'Snapshoot Portfolio-1.png',
-    news: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    newNews: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    portNews: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-    share: 'Live Link',
-    shareSrc: 'Source Link',
+    id: 'third_project',
+    name: 'Tonic',
+    image: 'Snapshoot Portfolio-1.png',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    descriptionExtra: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    workInfo: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    liveLink: 'Live Link',
+    sourceLink: 'Source Link',
   },
   {
-    id: 'flames_004',
-    address: 'Tonic',
-    picture: 'Snapshoot Portfolio-2.png',
-    news: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    newNews: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    portNews: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    share: 'Live Link',
-    shareSrc: 'Source Link',
+    id: 'fourth_project',
+    name: 'Tonic',
+    image: 'Snapshoot Portfolio-2.png',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    descriptionExtra: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    workInfo: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    liveLink: 'Live Link',
+    sourceLink: 'Source Link',
   },
 ];
 
-// popup  codes ********
+// ------------popup modal codes ********
 
-function modalTank(popContent) {
-  const modalInfo = `
-  <div class= "modal-info-container">
-    <div class= "modal">
+function popUpModal(project) {
+  const modalContent = `
+  <div class= "popup-container">
+    <div class= "popup">
       <div>
       
-        <h3>${popContent.address} <i class="fa-solid fa-xmark" id="modal-clean"></i></h3>
-        <ul class="business">
+        <h3>${project.name} <i class="fa-solid fa-xmark" id="popupClose"></i></h3>
+        <ul class="proj">
           <li><a href="#">CANOPY</a></li>
           <li><div class="dot"></div></li>
           <li>Back End Dev</li>
@@ -59,36 +62,36 @@ function modalTank(popContent) {
           <li>2015</li>
         </ul>
       </div>
-      <img src="./images/${popContent.picture}" alt="Work-sample" />
-      <div class="insides">
-        <div class="insideLeft">
-          <p class="busns phones-descr">
-            ${popContent.news}
+      <img src="./images/${project.image}" alt="Work-sample" />
+      <div class="two-part">
+        <div class="left-popup">
+          <p class="pro mobile-popup-info">
+            ${project.description}
           </p>
-          <p class="busns pc-descr">
-            ${popContent.newNews}
+          <p class="pro desktop-popup-info">
+            ${project.descriptionExtra}
           </p>
         </div>
-        <div class="insideRight">
-          <ul class="techs">
+        <div class="right-popup">
+          <ul class="language">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
           </ul>
-          <ul class="techs pc-techs">
+          <ul class="language lagu-desktop">
             <li>Github</li>
             <li>Ruby</li>
             <li>BootStrap</li>
           </ul>
-          <div class="crop"></div>
-            <button class="btn modalBtn">
+          <div class="thin-line"></div>
+            <button class="button popup-buttons">
               <div>
-                ${popContent.share} <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                ${project.liveLink} <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </div>
             </button>
-            <button class="btn modalBtn">
+            <button class="button popup-buttons">
               <div>
-                ${popContent.shareSrc} <i class="fa-brands fa-square-github"></i></i>
+                ${project.sourceLink} <i class="fa-brands fa-square-github"></i></i>
               </div>
             </button>
           </div>
@@ -97,70 +100,70 @@ function modalTank(popContent) {
     </div>
   </div>`;
 
-  return modalInfo;
+  return modalContent;
 }
 
-function modalFlames(flames = []) {
-  let modalFlamesInfo = '';
+function loadProjectCards(projects = []) {
+  let projectContents = '';
 
-  flames.forEach((popContent) => {
-    modalFlamesInfo += `
-    <div class= "wks" id= "portfolio">
-    <img src="./images/${popContent.picture}" alt="Work-sample" class="img-transition"/>
-    <div class="card-work folio-section">
-      <h3>${popContent.address}</h3>
-      <ul class="business">
+  projects.forEach((project) => {
+    projectContents += `
+    <div class= "works" id= "portfolio">
+    <img src="./images/${project.image}" alt="Work-sample" class="img-transition"/>
+    <div class="card-work work">
+      <h3>${project.name}</h3>
+      <ul class="proj">
         <li><a href="#">CANOPY</a></li>
         <li><div class="dot"></div></li>
         <li>Back End Dev</li>
         <li><div class="dot"></div></li>
         <li>2015</li>
       </ul>
-      <p class="busns">
-        ${popContent.portNews}
+      <p class="pro">
+        ${project.workInfo}
       </p>
-      <ul class="techs">
+      <ul class="language">
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
       </ul>
-      <button class="btn btn-unknown" modal-code="${popContent.id}" id="btn-pg">See Project</button>
+      <button class="button button-mg" project-id="${project.id}" id="see-project-button">See Project</button>
     </div>
   </div>
     `;
   });
 
-  return modalFlamesInfo;
+  return projectContents;
 }
 
-function modalClean() {
-  tank.style.display = 'none';
+function closePopUp() {
+  containerPopup.style.display = 'none';
 }
 
-function modalDispaly(popContent) {
-  const modalTemplate = modalTank(popContent);
-  tank.innerHTML = modalTemplate;
-  tank.style.display = 'block';
+function openPopUp(project) {
+  const modalTemplate = popUpModal(project);
+  containerPopup.innerHTML = modalTemplate;
+  containerPopup.style.display = 'block';
 
-  const modalCleanButton = document.querySelector('#modal-clean');
+  const popUpCloseButton = document.querySelector('#popupClose');
 
-  modalCleanButton.addEventListener('click', modalClean);
+  popUpCloseButton.addEventListener('click', closePopUp);
 }
 
 window.addEventListener('load', () => {
-  const portfolioSection = document.querySelector('#folio-section');
-  tank.style.display = 'none';
+  const portfolioSection = document.querySelector('#work');
+  containerPopup.style.display = 'none';
 
-  portfolioSection.innerHTML = modalFlames(flames);
+  portfolioSection.innerHTML = loadProjectCards(projects);
 
-  const pgBtn = document.querySelectorAll('#btn-pg');
+  const proButtons = document.querySelectorAll('#see-project-button');
 
-  Array.from(pgBtn).forEach((all) => {
-    all.addEventListener('click', () => {
-      const modalCode = all.getAttribute('modal-code');
-      const modalObject = flames.find((popContent) => popContent.id === modalCode);
+  Array.from(proButtons).forEach((element) => {
+    element.addEventListener('click', () => {
+      const projectID = element.getAttribute('project-id');
+      const projectObj = projects.find((project) => project.id === projectID);
 
-      modalDispaly(modalObject);
+      openPopUp(projectObj);
     });
   });
 });
