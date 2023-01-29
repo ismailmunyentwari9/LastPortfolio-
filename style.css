@@ -370,7 +370,7 @@ h3 {
 
 .btn {
   display: inline-grid;
-  padding: 13px;
+  padding: 12px;
   background: #fff;
   border: 1px solid #396df2;
   border-radius: 8px;
@@ -694,7 +694,7 @@ h3 {
 
   .img-transition {
     width: 544px;
-    height: 447px;
+    height: 448px;
     transition-duration: 0.5s;
   }
 
@@ -720,7 +720,7 @@ h3 {
   }
 
   .text-offwhite {
-    width: 521px;
+    width: 520px;
   }
 
   .fillPaper input {
