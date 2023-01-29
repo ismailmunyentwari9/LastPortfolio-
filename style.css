@@ -1,9 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.radius {
+  background: #e5e5e5;
+}
+
 .error_style {
   background-color: #e52;
   color: white;
 }
 
-.nav-bar {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,7 +24,7 @@
   min-height: 100%;
 }
 
-.intro-section {
+.background {
   background-image: url(./images/header-shapes-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,19 +32,19 @@
   align-items: center;
 }
 
-.site-title {
+.web-name {
   font-size: 18px;
   font-weight: 700;
   color: #6070ff;
   line-height: 20px;
 }
 
-.menu-toggle i {
+.bar-button {
   display: flex;
   color: #6070ff;
 }
 
-.nav-bar #nav-menu {
+.menu {
   background: #6070ff;
   mix-blend-mode: multiply;
   display: none;
@@ -44,18 +57,18 @@
   padding-top: 125px;
 }
 
-.nav-menu li {
+.menu li {
   padding-bottom: 40px;
 }
 
-.nav-menu a {
+.menu a {
   margin-left: 24px;
   color: #fff;
   font-weight: 600;
   font-size: 32px;
 }
 
-.nav-menu .r-side {
+.menu .right {
   color: #fff;
   position: absolute;
   cursor: pointer;
@@ -65,20 +78,20 @@
   left: 310px;
 }
 
-.nav-ul {
+.menu-desktop {
   display: none;
 }
 
-.intro {
+.dts {
   background-color: #fff;
   border-bottom-left-radius: 100px;
 }
 
-.intro-text {
+.details {
   margin: 24px;
 }
 
-.intro-text h1 {
+.details h1 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -88,7 +101,7 @@
   margin-top: 114px;
 }
 
-.intro-text p {
+.details p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -96,23 +109,7 @@
   margin-top: 12px;
 }
 
-* {
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-h3 .fa-xmark {
-  color: #67798e;
-  cursor: pointer;
-  font-size: 15px;
-  margin-left: 139px;
-}
-
-.cta-btn {
+.connect {
   display: flex;
   font-weight: 500;
   font-size: 16px;
@@ -121,27 +118,27 @@ h3 .fa-xmark {
   color: #7f8cff;
 }
 
-.social-media {
+.social-links {
   display: flex;
   margin-top: 12px;
   margin-bottom: 114px;
 }
 
-.media-icon {
+.social-icons {
   color: #505f79;
   padding: 20px 12px;
 }
 
-/******************* modal section styles
-.unknown {
+/******************* popup section styles ********************/
+.my-pop-up {
   width: 100vh;
   height: 100vh;
   position: fixed;
   z-index: 3;
   overflow: auto;
 }
-********************/
-.modal-info-container {
+
+.popup-container {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -154,7 +151,7 @@ h3 .fa-xmark {
   backdrop-filter: blur(5px);
 }
 
-.modal {
+.popup {
   padding: 16px;
   background: #fff;
   width: 327px;
@@ -163,28 +160,35 @@ h3 .fa-xmark {
   border-radius: 16px;
 }
 
-.modal img {
+h3 .fa-xmark {
+  color: #67798e;
+  cursor: pointer;
+  font-size: 15px;
+  margin-left: 139px;
+}
+
+.popup img {
   margin-top: 20px;
 }
 
-.phones-descr {
+.mobile-popup-info {
   display: block;
 }
 
-.pc-descr {
+.desktop-popup-info {
   display: none;
 }
 
-.modalBtn {
+.popup-buttons {
   margin-right: 12px;
   margin-top: 0;
 }
 
-.pc-techs {
+.lagu-desktop {
   display: none;
 }
 
-.crop {
+.thin-line {
   background: #ebecf0;
   height: 1px;
   width: 303px;
@@ -192,17 +196,19 @@ h3 .fa-xmark {
   margin-bottom: 20px;
 }
 
-.abt-section {
+/* ************* styles for about me section **************/
+
+.about {
   padding: 24px;
   background: #fff;
   border-top-right-radius: 100px;
 }
 
-.about-info-section {
+.border {
   background: #e5e5e5;
 }
 
-.abt-section h2 {
+.about h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -212,7 +218,7 @@ h3 .fa-xmark {
   margin-top: 90px;
 }
 
-.abt-section p {
+.about p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -220,11 +226,11 @@ h3 .fa-xmark {
   margin-top: 12px;
 }
 
-.division-lang {
+.lagu {
   margin-bottom: 110px;
 }
 
-.lng {
+.languages {
   display: flex;
   width: 303px;
   height: 66.72px;
@@ -234,18 +240,18 @@ h3 .fa-xmark {
   margin-top: 12px;
 }
 
-.about-me-ul {
+.about-me {
   margin-top: 55px;
 }
 
-.about-me-ul a {
+.about-me a {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   color: #000;
 }
 
-.lng img {
+.languages img {
   width: 48px;
   height: 48px;
   border: 1px solid #fff;
@@ -253,7 +259,7 @@ h3 .fa-xmark {
   margin-left: 12px;
 }
 
-.lng p {
+.languages p {
   margin-left: 16px;
   font-weight: 500;
   font-size: 15px;
@@ -261,31 +267,33 @@ h3 .fa-xmark {
   color: #253858;
 }
 
-.frameworks-section {
+.info {
   margin-top: 36px;
 }
 
-.frameworks-section a {
+.info a {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   color: #000;
 }
 
-.burrier {
+.line {
   background: #dfe1e6;
   height: 1px;
   width: 327px;
   margin-top: 24px;
 }
 
-.dropdown-menu {
+.down {
   display: flex;
   justify-content: space-between;
   margin-right: 58px;
 }
 
-.portfolio-section {
+/************* style for works section***************** */
+
+.shadow-back {
   background: #e5e5e5;
   padding: 114px 24px;
   display: grid;
@@ -311,7 +319,7 @@ h3 {
   width: auto;
 }
 
-.business {
+.proj {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   align-content: center;
@@ -325,7 +333,7 @@ h3 {
   border-radius: 50%;
 }
 
-.business li {
+.proj li {
   color: #7a869a;
   margin-right: 12px;
   margin-top: 20px;
@@ -333,14 +341,14 @@ h3 {
   line-height: 16px;
 }
 
-.business a {
+.proj a {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #344563;
 }
 
-.busns {
+.pro {
   color: #344563;
   font-size: 15px;
   font-weight: 400;
@@ -348,13 +356,13 @@ h3 {
   margin-top: 20px;
 }
 
-.techs {
+.language {
   display: grid;
   grid-template-columns: auto auto auto;
   margin-top: 12px;
 }
 
-.techs li {
+.language li {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -368,7 +376,7 @@ h3 {
   letter-spacing: 0.1em;
 }
 
-.btn {
+.button {
   display: inline-grid;
   padding: 12px;
   background: #fff;
@@ -379,15 +387,14 @@ h3 {
   color: #396df2;
 }
 
-.btn:hover {
+.button:hover {
   color: #fff;
   background: #396df2;
   transition: 0.5s;
 }
 
-.btn-unknown {
+.button-mg {
   margin-top: 24px;
-  background-color: white !important;
 }
 
 .blur {
@@ -399,7 +406,7 @@ h3 {
 }
 
 /******************* styles for contact me section *******************/
-.cntct-frm {
+.contact-form {
   display: flex;
   flex-direction: column;
   background: #6070ff;
@@ -410,61 +417,59 @@ h3 {
   background-position: right;
 }
 
-.fm-section-contact-title {
+.contact-me {
   font-size: 40px;
-  color: #ffff;
 }
 
-.fm-section-title {
+.title-container {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 12px;
 }
 
-.fm-section-title p {
+.title-container p {
   align-self: center;
 }
 
-.fm-section {
+.form-container {
   margin: 24px;
   margin-top: 50px;
 }
 
-.fillPaper {
+form {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
-.fillPaper input {
+form input {
   height: 48px;
-  width: 100%;
   border-radius: 8px;
   padding-left: 16px;
   border: 1px solid white;
 }
 
-.fillPaper textarea::placeholder {
+form textarea::placeholder {
   color: #b3bac5;
 }
 
-.cntct-frm .btn {
+.contact-form .button {
   padding: 12px 16px;
   margin-bottom: 45px;
 }
 
-.fillPaper input::placeholder {
+form input::placeholder {
   color: #b3bac5;
 }
 
 #textarea {
   height: 170px;
-  width: 100%;
   border-radius: 8px;
   padding: 15px 32px 15px 16px;
 }
 
+/**************** additional styles *********************/
 .text-white {
   color: #fff;
 }
@@ -486,14 +491,15 @@ h3 {
   text-align: center;
 }
 
-.form-b:hover {
+.form-button:hover {
   color: white;
   background: #396df2;
   transition: 0.5s;
 }
 
+/************** meadia query for desktop vesrion **************/
 @media screen and (min-width: 768px) {
-  .menu-toggle > i {
+  .bar-button > i {
     display: none;
   }
 
@@ -502,19 +508,19 @@ h3 {
     color: white;
   }
 
-  .r-side {
+  .right {
     display: none;
   }
 
-  .nav-bar #nav-menu {
+  .menu {
     display: none;
   }
 
-  .nav-ul {
+  .menu-desktop {
     display: flex;
   }
 
-  .nav-item a {
+  .menu-bar a {
     margin-right: 32px;
     font-weight: 500;
     font-size: 15px;
@@ -526,11 +532,11 @@ h3 {
     margin-right: 155px;
   }
 
-  .nav-item:hover {
+  .menu-bar:hover {
     text-decoration: underline;
   }
 
-  .intro-section {
+  .background {
     background-image: url(./images/Header\ bg@2x.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -539,37 +545,37 @@ h3 {
     padding-bottom: 120px;
   }
 
-  .intro-text {
+  .details {
     margin-top: 220px;
     margin-left: 260px;
     margin-right: 260px;
     padding-bottom: 200px;
   }
 
-  .intro-text h1 {
+  .details h1 {
     margin-top: 0;
   }
 
-  .intro-text p {
+  .details p {
     font-size: 20px;
   }
 
-  .social-media {
+  .social-links {
     margin-bottom: 0;
   }
 
-  .media-icon {
+  .social-icons {
     transition-duration: 0.5s;
   }
 
-  .media-icon i:hover {
+  .social-icons i:hover {
     transform: scale(1.5);
     transition: 0.5s;
   }
 
   /* ----------------------------popup------------- */
 
-  .modal {
+  .popup {
     width: 1156px;
     height: 1163px;
   }
@@ -579,57 +585,57 @@ h3 {
     font-size: 15px;
   }
 
-  .modal img {
+  .popup img {
     width: 1108px;
     height: 586px;
   }
 
-  .insideLeft {
+  .left-popup {
     width: 728px;
     float: left;
   }
 
-  .insideRight {
+  .right-popup {
     float: right;
     margin-right: 30px;
   }
 
-  .phones-descr {
+  .mobile-popup-info {
     display: none;
   }
 
-  .pc-descr {
+  .desktop-popup-info {
     display: block;
   }
 
-  .crop {
+  .thin-line {
     width: 298px;
   }
 
-  .modalBtn {
+  .popup-buttons {
     width: 142px;
   }
 
   /* ***************About me section styles *********************/
-  .abt-section {
+  .about {
     display: flex;
     margin-bottom: 150px;
   }
 
-  .about-text {
+  .abmy {
     width: 447px;
     height: 392px;
     margin-left: 142px;
   }
 
-  .division-lang {
+  .lagu {
     margin-top: 50px;
     width: 684px;
     height: 360px;
     margin-left: 37px;
   }
 
-  .lng {
+  .languages {
     display: inline-block;
     width: 122px;
     height: 120px;
@@ -639,12 +645,12 @@ h3 {
     margin-top: 36px;
   }
 
-  .burrier {
+  .line {
     width: 685px;
   }
 
   /******************  works field section styles  *****************/
-  .portfolio-section {
+  .shadow-back {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -669,24 +675,24 @@ h3 {
     font-size: 40px;
   }
 
-  .business {
+  .proj {
     display: flex;
   }
 
-  .business li {
+  .proj li {
     font-size: 18px;
   }
 
-  .business a {
+  .proj a {
     font-size: 18px;
   }
 
-  .busns {
+  .pro {
     font-size: 16px;
     margin-top: 32px;
   }
 
-  .techs {
+  .language {
     display: flex;
     font-size: 12px;
     margin-top: 24px;
@@ -702,18 +708,19 @@ h3 {
     transform: scale(1.1);
   }
 
-  .btn {
+  .button {
     justify-content: center;
   }
 
-  .cntct-frm {
+  /* ******************contact me section styles******************** */
+  .contact-form {
     background-image: url(./images/contact\ form\ background\ shapes@2x.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
   }
 
-  .fm-section {
+  .form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -723,7 +730,7 @@ h3 {
     width: 520px;
   }
 
-  .fillPaper input {
+  form input {
     width: 447px;
     height: 48px;
   }
@@ -733,7 +740,7 @@ h3 {
     height: 170px;
   }
 
-  .fm-btn {
+  .form-button {
     margin-left: 151px;
   }
 }
