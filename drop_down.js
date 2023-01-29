@@ -1,22 +1,21 @@
-//* ****Dro down codes ***************
-const menuContainer = document.querySelector('.menu');
-const closeUp = document.querySelector('.right');
-const menus = document.querySelectorAll('.menu > li');
-const body = document.querySelector('.blurx');
-const open = document.querySelector('.bar-button');
-const closeMenu = () => {
-  menuContainer.style.display = 'none';
-  body.classList.remove('blur');
-  open.style.display = 'block';
+const navMenu = document.querySelector('#nav-menu');
+const xButton = document.querySelector('.r-side');
+const links = document.querySelectorAll('.nav-menu > li');
+const bd = document.querySelector('.background-blur');
+const openButton = document.querySelector('.menu-toggle');
+const xClose = () => {
+  navMenu.style.display = 'none';
+  bd.classList.remove('blur');
+  openButton.style.display = 'block';
 };
 const openMenu = () => {
-  menuContainer.style.display = 'block';
-  open.style.display = 'none';
-  body.classList.add('blur');
+  navMenu.style.display = 'block';
+  openButton.style.display = 'none';
+  bd.classList.add('blur');
 };
 
-open.addEventListener('click', openMenu);
-closeUp.addEventListener('click', closeMenu);
-menus.forEach((link) => {
-  link.addEventListener('click', closeMenu);
+openButton.addEventListener('click', openMenu);
+xButton.addEventListener('click', xClose);
+links.forEach((link) => {
+  link.addEventListener('click', xClose);
 });

@@ -1,22 +1,9 @@
-* {
-  padding: 0;
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-}
-
-.radius {
-  background: #e5e5e5;
-}
-
 .error_style {
   background-color: #e52;
   color: white;
 }
 
-.navbar {
+.nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +11,7 @@
   min-height: 100%;
 }
 
-.background {
+.intro-section {
   background-image: url(./images/header-shapes-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,19 +19,19 @@
   align-items: center;
 }
 
-.web-name {
+.site-title {
   font-size: 18px;
   font-weight: 700;
   color: #6070ff;
   line-height: 20px;
 }
 
-.bar-button {
+.menu-toggle i {
   display: flex;
   color: #6070ff;
 }
 
-.menu {
+.nav-bar #nav-menu {
   background: #6070ff;
   mix-blend-mode: multiply;
   display: none;
@@ -57,18 +44,18 @@
   padding-top: 125px;
 }
 
-.menu li {
+.nav-menu li {
   padding-bottom: 40px;
 }
 
-.menu a {
+.nav-menu a {
   margin-left: 24px;
   color: #fff;
   font-weight: 600;
   font-size: 32px;
 }
 
-.menu .right {
+.nav-menu .r-side {
   color: #fff;
   position: absolute;
   cursor: pointer;
@@ -78,20 +65,20 @@
   left: 310px;
 }
 
-.menu-desktop {
+.nav-ul {
   display: none;
 }
 
-.dts {
+.intro {
   background-color: #fff;
   border-bottom-left-radius: 100px;
 }
 
-.details {
+.intro-text {
   margin: 24px;
 }
 
-.details h1 {
+.intro-text h1 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -101,7 +88,7 @@
   margin-top: 114px;
 }
 
-.details p {
+.intro-text p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -109,7 +96,23 @@
   margin-top: 12px;
 }
 
-.connect {
+* {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h3 .fa-xmark {
+  color: #67798e;
+  cursor: pointer;
+  font-size: 15px;
+  margin-left: 139px;
+}
+
+.cta-btn {
   display: flex;
   font-weight: 500;
   font-size: 16px;
@@ -118,27 +121,27 @@
   color: #7f8cff;
 }
 
-.social-links {
+.social-media {
   display: flex;
   margin-top: 12px;
   margin-bottom: 114px;
 }
 
-.social-icons {
+.media-icon {
   color: #505f79;
   padding: 20px 12px;
 }
 
-/******************* popup section styles ********************/
-.my-pop-up {
+/******************* modal section styles
+.unknown {
   width: 100vh;
   height: 100vh;
   position: fixed;
   z-index: 3;
   overflow: auto;
 }
-
-.popup-container {
+********************/
+.modal-info-container {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -151,7 +154,7 @@
   backdrop-filter: blur(5px);
 }
 
-.popup {
+.modal {
   padding: 16px;
   background: #fff;
   width: 327px;
@@ -160,35 +163,28 @@
   border-radius: 16px;
 }
 
-h3 .fa-xmark {
-  color: #67798e;
-  cursor: pointer;
-  font-size: 15px;
-  margin-left: 139px;
-}
-
-.popup img {
+.modal img {
   margin-top: 20px;
 }
 
-.mobile-popup-info {
+.phones-descr {
   display: block;
 }
 
-.desktop-popup-info {
+.pc-descr {
   display: none;
 }
 
-.popup-buttons {
+.modalBtn {
   margin-right: 12px;
   margin-top: 0;
 }
 
-.lagu-desktop {
+.pc-techs {
   display: none;
 }
 
-.thin-line {
+.crop {
   background: #ebecf0;
   height: 1px;
   width: 303px;
@@ -196,19 +192,17 @@ h3 .fa-xmark {
   margin-bottom: 20px;
 }
 
-/* ************* styles for about me section **************/
-
-.about {
+.abt-section {
   padding: 24px;
   background: #fff;
   border-top-right-radius: 100px;
 }
 
-.border {
+.about-info-section {
   background: #e5e5e5;
 }
 
-.about h2 {
+.abt-section h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -218,7 +212,7 @@ h3 .fa-xmark {
   margin-top: 90px;
 }
 
-.about p {
+.abt-section p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -226,11 +220,11 @@ h3 .fa-xmark {
   margin-top: 12px;
 }
 
-.lagu {
+.division-lang {
   margin-bottom: 110px;
 }
 
-.languages {
+.lng {
   display: flex;
   width: 303px;
   height: 66.72px;
@@ -240,18 +234,18 @@ h3 .fa-xmark {
   margin-top: 12px;
 }
 
-.about-me {
+.about-me-ul {
   margin-top: 55px;
 }
 
-.about-me a {
+.about-me-ul a {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   color: #000;
 }
 
-.languages img {
+.lng img {
   width: 48px;
   height: 48px;
   border: 1px solid #fff;
@@ -259,7 +253,7 @@ h3 .fa-xmark {
   margin-left: 12px;
 }
 
-.languages p {
+.lng p {
   margin-left: 16px;
   font-weight: 500;
   font-size: 15px;
@@ -267,33 +261,31 @@ h3 .fa-xmark {
   color: #253858;
 }
 
-.info {
+.frameworks-section {
   margin-top: 36px;
 }
 
-.info a {
+.frameworks-section a {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   color: #000;
 }
 
-.line {
+.burrier {
   background: #dfe1e6;
   height: 1px;
   width: 327px;
   margin-top: 24px;
 }
 
-.down {
+.dropdown-menu {
   display: flex;
   justify-content: space-between;
   margin-right: 58px;
 }
 
-/************* style for works section***************** */
-
-.shadow-back {
+.portfolio-section {
   background: #e5e5e5;
   padding: 114px 24px;
   display: grid;
@@ -319,7 +311,7 @@ h3 {
   width: auto;
 }
 
-.proj {
+.business {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   align-content: center;
@@ -333,7 +325,7 @@ h3 {
   border-radius: 50%;
 }
 
-.proj li {
+.business li {
   color: #7a869a;
   margin-right: 12px;
   margin-top: 20px;
@@ -341,14 +333,14 @@ h3 {
   line-height: 16px;
 }
 
-.proj a {
+.business a {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #344563;
 }
 
-.pro {
+.busns {
   color: #344563;
   font-size: 15px;
   font-weight: 400;
@@ -356,13 +348,13 @@ h3 {
   margin-top: 20px;
 }
 
-.language {
+.techs {
   display: grid;
   grid-template-columns: auto auto auto;
   margin-top: 12px;
 }
 
-.language li {
+.techs li {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -376,7 +368,7 @@ h3 {
   letter-spacing: 0.1em;
 }
 
-.button {
+.btn {
   display: inline-grid;
   padding: 12px;
   background: #fff;
@@ -387,14 +379,15 @@ h3 {
   color: #396df2;
 }
 
-.button:hover {
+.btn:hover {
   color: #fff;
   background: #396df2;
   transition: 0.5s;
 }
 
-.button-mg {
+.btn-unknown {
   margin-top: 24px;
+  background-color: white !important;
 }
 
 .blur {
@@ -406,7 +399,7 @@ h3 {
 }
 
 /******************* styles for contact me section *******************/
-.contact-form {
+.cntct-frm {
   display: flex;
   flex-direction: column;
   background: #6070ff;
@@ -417,59 +410,61 @@ h3 {
   background-position: right;
 }
 
-.contact-me {
+.fm-section-contact-title {
   font-size: 40px;
+  color: #ffff;
 }
 
-.title-container {
+.fm-section-title {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 12px;
 }
 
-.title-container p {
+.fm-section-title p {
   align-self: center;
 }
 
-.form-container {
+.fm-section {
   margin: 24px;
   margin-top: 50px;
 }
 
-form {
+.fillPaper {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
-form input {
+.fillPaper input {
   height: 48px;
+  width: 100%;
   border-radius: 8px;
   padding-left: 16px;
   border: 1px solid white;
 }
 
-form textarea::placeholder {
+.fillPaper textarea::placeholder {
   color: #b3bac5;
 }
 
-.contact-form .button {
+.cntct-frm .btn {
   padding: 12px 16px;
   margin-bottom: 45px;
 }
 
-form input::placeholder {
+.fillPaper input::placeholder {
   color: #b3bac5;
 }
 
 #textarea {
   height: 170px;
+  width: 100%;
   border-radius: 8px;
   padding: 15px 32px 15px 16px;
 }
 
-/**************** additional styles *********************/
 .text-white {
   color: #fff;
 }
@@ -491,15 +486,14 @@ form input::placeholder {
   text-align: center;
 }
 
-.form-button:hover {
+.form-b:hover {
   color: white;
   background: #396df2;
   transition: 0.5s;
 }
 
-/************** meadia query for desktop vesrion **************/
 @media screen and (min-width: 768px) {
-  .bar-button > i {
+  .menu-toggle > i {
     display: none;
   }
 
@@ -508,19 +502,19 @@ form input::placeholder {
     color: white;
   }
 
-  .right {
+  .r-side {
     display: none;
   }
 
-  .menu {
+  .nav-bar #nav-menu {
     display: none;
   }
 
-  .menu-desktop {
+  .nav-ul {
     display: flex;
   }
 
-  .menu-bar a {
+  .nav-item a {
     margin-right: 32px;
     font-weight: 500;
     font-size: 15px;
@@ -532,11 +526,11 @@ form input::placeholder {
     margin-right: 155px;
   }
 
-  .menu-bar:hover {
+  .nav-item:hover {
     text-decoration: underline;
   }
 
-  .background {
+  .intro-section {
     background-image: url(./images/Header\ bg@2x.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -545,37 +539,37 @@ form input::placeholder {
     padding-bottom: 120px;
   }
 
-  .details {
+  .intro-text {
     margin-top: 220px;
     margin-left: 260px;
     margin-right: 260px;
     padding-bottom: 200px;
   }
 
-  .details h1 {
+  .intro-text h1 {
     margin-top: 0;
   }
 
-  .details p {
+  .intro-text p {
     font-size: 20px;
   }
 
-  .social-links {
+  .social-media {
     margin-bottom: 0;
   }
 
-  .social-icons {
+  .media-icon {
     transition-duration: 0.5s;
   }
 
-  .social-icons i:hover {
+  .media-icon i:hover {
     transform: scale(1.5);
     transition: 0.5s;
   }
 
   /* ----------------------------popup------------- */
 
-  .popup {
+  .modal {
     width: 1156px;
     height: 1163px;
   }
@@ -585,57 +579,57 @@ form input::placeholder {
     font-size: 15px;
   }
 
-  .popup img {
+  .modal img {
     width: 1108px;
     height: 586px;
   }
 
-  .left-popup {
+  .insideLeft {
     width: 728px;
     float: left;
   }
 
-  .right-popup {
+  .insideRight {
     float: right;
     margin-right: 30px;
   }
 
-  .mobile-popup-info {
+  .phones-descr {
     display: none;
   }
 
-  .desktop-popup-info {
+  .pc-descr {
     display: block;
   }
 
-  .thin-line {
+  .crop {
     width: 298px;
   }
 
-  .popup-buttons {
+  .modalBtn {
     width: 142px;
   }
 
   /* ***************About me section styles *********************/
-  .about {
+  .abt-section {
     display: flex;
     margin-bottom: 150px;
   }
 
-  .abmy {
+  .about-text {
     width: 447px;
     height: 392px;
     margin-left: 142px;
   }
 
-  .lagu {
+  .division-lang {
     margin-top: 50px;
     width: 684px;
     height: 360px;
     margin-left: 37px;
   }
 
-  .languages {
+  .lng {
     display: inline-block;
     width: 122px;
     height: 120px;
@@ -645,12 +639,12 @@ form input::placeholder {
     margin-top: 36px;
   }
 
-  .line {
+  .burrier {
     width: 685px;
   }
 
   /******************  works field section styles  *****************/
-  .shadow-back {
+  .portfolio-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -675,24 +669,24 @@ form input::placeholder {
     font-size: 40px;
   }
 
-  .proj {
+  .business {
     display: flex;
   }
 
-  .proj li {
+  .business li {
     font-size: 18px;
   }
 
-  .proj a {
+  .business a {
     font-size: 18px;
   }
 
-  .pro {
+  .busns {
     font-size: 16px;
     margin-top: 32px;
   }
 
-  .language {
+  .techs {
     display: flex;
     font-size: 12px;
     margin-top: 24px;
@@ -708,19 +702,18 @@ form input::placeholder {
     transform: scale(1.1);
   }
 
-  .button {
+  .btn {
     justify-content: center;
   }
 
-  /* ******************contact me section styles******************** */
-  .contact-form {
+  .cntct-frm {
     background-image: url(./images/contact\ form\ background\ shapes@2x.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
   }
 
-  .form-container {
+  .fm-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -730,7 +723,7 @@ form input::placeholder {
     width: 520px;
   }
 
-  form input {
+  .fillPaper input {
     width: 447px;
     height: 48px;
   }
@@ -740,7 +733,7 @@ form input::placeholder {
     height: 170px;
   }
 
-  .form-button {
+  .fm-btn {
     margin-left: 151px;
   }
 }

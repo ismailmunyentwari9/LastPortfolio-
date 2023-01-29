@@ -1,43 +1,34 @@
-//* ******Validate form email*******
-const errorMessage = document.getElementById('error');
-const pageForm = document.getElementById('form');
-const Emails = document.getElementById('Emails');
-//* ***validate*****
+const popNotfication = document.getElementById('error');
+const formPaper = document.getElementById('.fillPaper');
+const targetedInput = document.getElementById('Emails');
 
-const emailValidation = (input) => {
+const validateTheEmail = (input) => {
   if (input === input.toLowerCase()) {
     return true;
   }
   return false;
 };
-pageForm.addEventListener('submit', (event) => {
-  errorMessage.innerHTML = '';
-  if (emailValidation(Emails.value)) {
-    errorMessage.innerHTML = '';
+formPaper.addEventListener('submit', (e) => {
+  popNotfication.innerHTML = '';
+  if (validateTheEmail(targetedInput.value)) {
+    popNotfication.innerHTML = '';
   } else {
-    event.preventDefault();
-    errorMessage.innerHTML = 'Please Dear user, use Email in lower case';
+    e.preventDefault();
+    popNotfication.innerHTML = 'Please Dear user, use Email in lower case';
   }
 });
 
-// ************storing data locally ***********
-const DataForLocal = document.querySelectorAll('.form-input');
-const storageForLocal = {
-  name: '',
-  email: '',
-  message: '',
-};
-DataForLocal.forEach((input) => {
+/** *store data */
+const dataInputs = document.querySelectorAll('input');
+dataInputs.forEach((input) => {
   input.addEventListener('input', () => {
-    storageForLocal[input.name] = input.value;
-    storageForLocal[input.email] = input.value;
-    storageForLocal[input.message] = input.value;
-    storageForLocal.setItem('information', JSON.stringify(storageForLocal));
+    sessionStorage.setItem(input.name, input.value);
   });
 });
-const informationStored = JSON.parse(storageForLocal.getItem('information'));
-if (informationStored) {
-  DataForLocal.forEach((element) => {
-    element.value = informationStored[element.name];
-  });
-}
+
+dataInputs.forEach((input) => {
+  const storedValue = sessionStorage.getItem(input.name);
+  if (storedValue) {
+    input.value = storedValue;
+  }
+});
