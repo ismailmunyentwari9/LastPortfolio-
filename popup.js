@@ -105,7 +105,7 @@ function modalFlames(flames = []) {
 
   flames.forEach((popContent) => {
     modalFlamesInfo += `
-    <div class= "works" id= "portfolio">
+    <div class= "wks" id= "portfolio">
     <img src="./images/${popContent.picture}" alt="Work-sample" class="img-transition"/>
     <div class="card-work folio-section">
       <h3>${popContent.address}</h3>

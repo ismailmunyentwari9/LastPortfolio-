@@ -292,7 +292,7 @@ h3 .fa-xmark {
   justify-content: center;
 }
 
-.works {
+.wks {
   padding: 16px;
   margin-top: 88px;
   background: #fff;
@@ -370,7 +370,7 @@ h3 {
 
 .btn {
   display: inline-grid;
-  padding: 13px;
+  padding: 12px;
   background: #fff;
   border: 1px solid #396df2;
   border-radius: 8px;
@@ -643,21 +643,20 @@ h3 {
     width: 685px;
   }
 
-  /******************  works field section styles  *****************/
   .portfolio-section {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .works {
+  .wks {
     display: flex;
     flex-direction: row;
     width: 1156px;
     height: auto;
   }
 
-  .works:nth-child(even) {
+  .wks:nth-child(even) {
     flex-direction: row-reverse;
   }
 
@@ -694,7 +693,7 @@ h3 {
 
   .img-transition {
     width: 544px;
-    height: 447px;
+    height: 448px;
     transition-duration: 0.5s;
   }
 
@@ -719,21 +718,22 @@ h3 {
     align-items: center;
   }
 
+  
+
+  .text-offwhite {
+    width: 520px;
+  }
+
   .fillPaper input {
     width: 447px;
     height: 47px;
   }
 
-  .text-offwhite {
-    width: 521px;
-  }
-
-  .fm-btn {
-    margin-left: 150px;
-  }
-
   textarea {
     width: 447px;
     height: 170px;
+  }
+  .fm-btn {
+    margin-left: 150px;
   }
 }
